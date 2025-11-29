@@ -16,11 +16,12 @@ const Team = () => {
                 <div className="team-grid">
                     {teamMembers.map((member) => (
                         <div key={member.id} className="team-card">
-                            <div
-                                className="team-avatar"
-                                style={{ backgroundColor: member.color }}
-                            >
-                                <span className="avatar-initials">{member.initials}</span>
+                            <div className="team-avatar-container">
+                                <img
+                                    src={member.image}
+                                    alt={member.name}
+                                    className="team-avatar-img"
+                                />
                             </div>
                             <h3 className="member-name">{member.name}</h3>
                             <p className="member-position">{member.position}</p>

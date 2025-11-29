@@ -3,70 +3,60 @@ export const teamMembers = [
         id: 1,
         name: "Амина Хасан",
         position: "Chief Technology Officer",
-        initials: "АХ",
-        color: "#00d4ff"
+        image: "https://randomuser.me/api/portraits/women/44.jpg"
     },
     {
         id: 2,
         name: "Дэвид Чен",
         position: "Lead DevOps Engineer",
-        initials: "ДЧ",
-        color: "#0077b6"
+        image: "https://randomuser.me/api/portraits/men/22.jpg"
     },
     {
         id: 3,
         name: "Мария Гарсия",
         position: "Cloud Architect",
-        initials: "МГ",
-        color: "#00ffcc"
+        image: "https://randomuser.me/api/portraits/women/65.jpg"
     },
     {
         id: 4,
         name: "Раджеш Патель",
         position: "Senior SRE Engineer",
-        initials: "РП",
-        color: "#ff6b6b"
+        image: "https://randomuser.me/api/portraits/men/86.jpg"
     },
     {
         id: 5,
         name: "Фатима Аль-Саид",
         position: "Security & Compliance Lead",
-        initials: "ФА",
-        color: "#a78bfa"
+        image: "https://randomuser.me/api/portraits/women/24.jpg"
     },
     {
         id: 6,
         name: "Джеймс О'Коннор",
         position: "Kubernetes Specialist",
-        initials: "ДО",
-        color: "#fbbf24"
+        image: "https://randomuser.me/api/portraits/men/11.jpg"
     },
     {
         id: 7,
         name: "Юки Танака",
         position: "CI/CD Engineer",
-        initials: "ЮТ",
-        color: "#34d399"
+        image: "https://randomuser.me/api/portraits/women/17.jpg"
     },
     {
         id: 8,
         name: "Лейла Мбеки",
         position: "Platform Engineer",
-        initials: "ЛМ",
-        color: "#f472b6"
+        image: "https://randomuser.me/api/portraits/women/90.jpg"
     },
     {
         id: 9,
         name: "Алекс Новак",
         position: "Infrastructure Engineer",
-        initials: "АН",
-        color: "#fb923c"
+        image: "https://randomuser.me/api/portraits/men/54.jpg"
     },
     {
         id: 10,
         name: "Прия Шарма",
         position: "FinOps Specialist",
-        initials: "ПШ",
-        color: "#60a5fa"
+        image: "https://randomuser.me/api/portraits/women/29.jpg"
     }
 ];
