@@ -13,8 +13,7 @@ const Footer = () => {
                     <div className="footer-col">
                         <h4>Контакты</h4>
                         <p>Email: info@devopspro.com</p>
-                        <p>Tel: +7 (999) 000-00-00</p>
-                        <p>Москва, Деловой Центр</p>
+                        <p>Будапешт, Belgian Beer Café</p>
                     </div>
                     <div className="footer-col">
                         <h4>Услуги</h4>
