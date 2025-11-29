@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import ServiceSection from './components/ServiceSection';
+import Team from './components/Team';
 import Footer from './components/Footer';
 import { services } from './data/services';
 import './App.css';
@@ -21,10 +22,12 @@ function App() {
           <ServiceSection key={service.id} service={service} index={index} />
         ))}
       </div>
+      <Team />
       <Footer />
     </div>
   );
 }
 
 export default App;
+
 
