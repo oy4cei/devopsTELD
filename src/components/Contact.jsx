@@ -95,7 +95,7 @@ const Contact = () => {
                                 </svg>
                             </div>
                             <h3>Working Hours</h3>
-                            <p>Mon-Fri: 9:00 - 18:00</p>
+                            <p>24/7/365</p>
                         </div>
                     </div>
 
