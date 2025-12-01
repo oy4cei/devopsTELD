@@ -1,170 +1,170 @@
 export const services = [
   {
     id: "cloud-management",
-    title: "1. Управление облачными платформами (Cloud Management)",
+    title: "1. Cloud Management",
     techStack: ["AWS", "Azure", "Google Cloud Platform"],
     subSections: [
       {
-        title: "1.1 Архитектура и дизайн облачных решений",
+        title: "1.1 Cloud Architecture & Design",
         items: [
-          "Построение прочной, отказоустойчивой и масштабируемой архитектуры",
-          "High Availability, Auto Scaling, Multi-AZ/Region схемы",
-          "Проектирование сетевой топологии: VPC/VNet, Peering, TGW, PrivateLink",
-          "Организация Landing Zone / Control Tower / Azure Landing Zone"
+          "Building robust, fault-tolerant, and scalable architecture",
+          "High Availability, Auto Scaling, Multi-AZ/Region schemes",
+          "Network topology design: VPC/VNet, Peering, TGW, PrivateLink",
+          "Landing Zone / Control Tower / Azure Landing Zone organization"
         ]
       },
       {
-        title: "1.2 Управление облачными ресурсами",
+        title: "1.2 Cloud Resource Management",
         items: [
-          "Полный lifecycle-менеджмент сервисов",
-          "Cost-monitoring, rightsizing, cleanup процессов",
-          "Построение безопасной Zero-Trust архитектуры",
-          "DR/Backup стратегии"
+          "Full service lifecycle management",
+          "Cost-monitoring, rightsizing, cleanup processes",
+          "Building secure Zero-Trust architecture",
+          "DR/Backup strategies"
         ]
       }
     ]
   },
   {
     id: "iac",
-    title: "2. Инфраструктура как код (IaC)",
+    title: "2. Infrastructure as Code (IaC)",
     techStack: ["Terraform", "CloudFormation", "Bicep", "Pulumi"],
     subSections: [
       {
-        title: "2.1 Проектирование IaC-решений",
+        title: "2.1 IaC Solution Design",
         items: [
-          "Архитектура модульных репозиториев",
-          "Организация сред: DEV • QA • STAGE • PROD",
-          "Управление состоянием (state), remote backend, locking"
+          "Modular repository architecture",
+          "Environment organization: DEV • QA • STAGE • PROD",
+          "State management, remote backend, locking"
         ]
       },
       {
-        title: "2.2 Автоматизация инфраструктурных развёртываний",
+        title: "2.2 Infrastructure Deployment Automation",
         items: [
-          "Пайплайны и GitOps-процессы",
+          "Pipelines and GitOps processes",
           "Policy-as-Code (OPA, AWS Config, Azure Policy)",
-          "Создание repeatable окружений"
+          "Creating repeatable environments"
         ]
       }
     ]
   },
   {
     id: "containers",
-    title: "3. Управление контейнерными платформами",
+    title: "3. Container Platform Management",
     techStack: ["Kubernetes", "ECS", "Azure Container Apps", "GKE", "EKS", "AKS"],
     subSections: [
       {
-        title: "3.1 Создание и поддержка контейнерных окружений",
+        title: "3.1 Container Environment Creation & Support",
         items: [
-          "Настройка кластеров EKS/AKS/GKE",
+          "EKS/AKS/GKE cluster configuration",
           "Node groups, spot-nodes, autoscaling (Cluster Autoscaler/Karpenter)",
-          "Ingress-контроллеры (ALB, NGINX, AGIC), service mesh (Istio/Linkerd)"
+          "Ingress controllers (ALB, NGINX, AGIC), service mesh (Istio/Linkerd)"
         ]
       },
       {
-        title: "3.2 Контейнеризация приложений",
+        title: "3.2 Application Containerization",
         items: [
-          "Docker-best-practices",
-          "Оптимизация образов, hardening, security scans",
-          "CI/CD для контейнеров"
+          "Docker best practices",
+          "Image optimization, hardening, security scans",
+          "CI/CD for containers"
         ]
       }
     ]
   },
   {
     id: "security",
-    title: "4. Безопасность, комплаенс и сертификации (DevSecOps)",
+    title: "4. Security, Compliance & Certifications (DevSecOps)",
     techStack: ["PCI DSS", "SOC 2", "HIPAA", "FedRAMP", "ISO27001"],
     subSections: [
       {
-        title: "4.1 Инфраструктурная безопасность",
+        title: "4.1 Infrastructure Security",
         items: [
           "Identity & Access Management (IAM/AAD)",
           "Secrets Management (AWS Secrets Manager, Azure Key Vault, GCP Secret Manager)",
           "Network Segmentation, Zero-Trust",
-          "Оценка уязвимостей (Trivy, Grype, Prisma, Wiz)"
+          "Vulnerability assessment (Trivy, Grype, Prisma, Wiz)"
         ]
       },
       {
         title: "4.2 Compliance & Security Assessments",
         items: [
-          "Подготовка к PCI DSS / SOC 2 / FedRAMP аудитам",
-          "Архитектурная документация и evidence support",
-          "Логи/алерты/аудит под требования compliance"
+          "Preparation for PCI DSS / SOC 2 / FedRAMP audits",
+          "Architectural documentation and evidence support",
+          "Logs/alerts/audit for compliance requirements"
         ]
       }
     ]
   },
   {
     id: "databases",
-    title: "5. Управление облачными базами данных",
+    title: "5. Cloud Database Management",
     techStack: ["RDS", "Aurora", "Azure SQL", "PostgreSQL/MySQL", "Mongo Atlas", "BigQuery"],
     subSections: [
       {
-        title: "5.1 Развёртывание и настройка DB-сервисов",
+        title: "5.1 DB Service Deployment & Configuration",
         items: [
-          "HA и Multi-AZ/Region конфигурации",
-          "Connection Pooling, Proxy слои",
+          "HA and Multi-AZ/Region configurations",
+          "Connection Pooling, Proxy layers",
           "Security best practices (encryption, audit, least privilege)"
         ]
       },
       {
-        title: "5.2 Администрирование и оптимизация",
+        title: "5.2 Administration & Optimization",
         items: [
           "Performance Tuning",
-          "Query optimization, индексирование",
-          "Настройка бэкапов, PITR (Point-In-Time Recovery)",
-          "Миграции между облаками/движками"
+          "Query optimization, indexing",
+          "Backup configuration, PITR (Point-In-Time Recovery)",
+          "Cross-cloud/engine migrations"
         ]
       }
     ]
   },
   {
     id: "cicd",
-    title: "6. Управление процессом релизов (CI/CD Engineering)",
+    title: "6. Release Process Management (CI/CD Engineering)",
     techStack: ["GitHub Actions", "GitLab CI", "Azure DevOps", "Jenkins", "ArgoCD", "FluxCD"],
     subSections: [
       {
-        title: "6.1 CI-процессы",
+        title: "6.1 CI Processes",
         items: [
-          "Build pipelines, кеширование, матричные стратегии",
+          "Build pipelines, caching, matrix strategies",
           "SAST/DAST/Dependency Scanning",
           "Code quality gates"
         ]
       },
       {
-        title: "6.2 CD-процессы",
+        title: "6.2 CD Processes",
         items: [
-          "Канареечные и blue/green релизы",
-          "GitOps-релизы через ArgoCD/FluxCD",
-          "Release strategies для микросервисов и монолитов",
-          "Rollback/rollforward автоматизация"
+          "Canary and blue/green releases",
+          "GitOps releases via ArgoCD/FluxCD",
+          "Release strategies for microservices and monoliths",
+          "Rollback/rollforward automation"
         ]
       },
       {
-        title: "6.3 Release Management как услуга",
+        title: "6.3 Release Management as a Service",
         items: [
-          "Создание релиз-календарей",
-          "Управление версиями (semantic versioning)",
-          "Контроль качества релизов"
+          "Creating release calendars",
+          "Version management (semantic versioning)",
+          "Release quality control"
         ]
       }
     ]
   },
   {
     id: "networking",
-    title: "7. Сетевой инжиниринг и коммуникации (Cloud Networking)",
+    title: "7. Network Engineering & Communications (Cloud Networking)",
     techStack: ["VPN", "Direct Connect", "ExpressRoute", "SD-WAN"],
     subSections: [
       {
-        title: "7.1 Сетевые архитектуры",
+        title: "7.1 Network Architectures",
         items: [
-          "Проектирование VPC/VNet структур",
-          "WAF/Firewall, NAT, маршрутизация",
-          "Частные каналы связи между офисами/датацентрами/облаками"
+          "VPC/VNet structure design",
+          "WAF/Firewall, NAT, routing",
+          "Private communication channels between offices/datacenters/clouds"
         ]
       },
       {
-        title: "7.2 Интеграция с on-premise",
+        title: "7.2 On-premise Integration",
         items: [
           "Site-to-Site VPN",
           "AWS Direct Connect / Azure ExpressRoute",
@@ -175,23 +175,23 @@ export const services = [
   },
   {
     id: "monitoring",
-    title: "8. Мониторинг и Observability",
+    title: "8. Monitoring & Observability",
     techStack: ["Grafana", "Prometheus", "Datadog", "CloudWatch", "Log Analytics", "ELK/Loki/Tempo"],
     subSections: [
       {
         title: "8.1 Monitoring-as-a-Service",
         items: [
-          "Сбор метрик (инфраструктура, приложения, БД, сети)",
-          "Настройка SLA/SLI/SLO",
-          "Унификация dashboards (Grafana/Datadog)"
+          "Metric collection (infrastructure, applications, DB, networks)",
+          "SLA/SLI/SLO configuration",
+          "Dashboard unification (Grafana/Datadog)"
         ]
       },
       {
         title: "8.2 Log Management",
         items: [
-          "Cloud-native логирование (CloudWatch Logs, Log Analytics, GCP Logging)",
-          "ELK/Loki-стек",
-          "Retention, архивация, отчёты"
+          "Cloud-native logging (CloudWatch Logs, Log Analytics, GCP Logging)",
+          "ELK/Loki stack",
+          "Retention, archiving, reporting"
         ]
       },
       {
@@ -206,23 +206,23 @@ export const services = [
   },
   {
     id: "finops",
-    title: "9. Экономическая оптимизация облаков (FinOps)",
+    title: "9. Cloud Cost Optimization (FinOps)",
     techStack: [],
     subSections: [
       {
         title: "9.1 Cost Optimization",
         items: [
-          "Анализ использования ресурсов",
-          "Spot/Reserved/Autoscaling рекомендации",
-          "Оптимизация S3/Blob storage",
-          "Cost breakdowns и прогнозирование"
+          "Resource usage analysis",
+          "Spot/Reserved/Autoscaling recommendations",
+          "S3/Blob storage optimization",
+          "Cost breakdowns and forecasting"
         ]
       },
       {
-        title: "9.2 Биллинг и отчётность",
+        title: "9.2 Billing & Reporting",
         items: [
-          "Автоматические отчёты по затратам",
-          "Алерты при превышении бюджета"
+          "Automated cost reports",
+          "Budget overrun alerts"
         ]
       }
     ]
@@ -233,65 +233,65 @@ export const services = [
     techStack: [],
     subSections: [
       {
-        title: "10.1 Создание внутренних платформ",
+        title: "10.1 Internal Platform Creation",
         items: [
-          "Платформа для self-service окружений",
-          "Каталог сервисов: шаблоны API, workers, cron-jobs",
-          "Стандартизация логирования, мониторинга, секретов"
+          "Platform for self-service environments",
+          "Service catalog: API templates, workers, cron-jobs",
+          "Standardization of logging, monitoring, secrets"
         ]
       },
       {
         title: "10.2 Developer Experience (DX)",
         items: [
-          "Автоматизация onboarding разработчиков",
-          "Автоматическая выдача окружений",
-          "Общая среда логирования и мониторинга"
+          "Developer onboarding automation",
+          "Automated environment provisioning",
+          "Shared logging and monitoring environment"
         ]
       }
     ]
   },
   {
     id: "support",
-    title: "11. Поддержка и сопровождение (SRE / DevOps Support)",
+    title: "11. Support & Maintenance (SRE / DevOps Support)",
     techStack: [],
     subSections: [
       {
-        title: "11.1 24/7 SRE-поддержка",
+        title: "11.1 24/7 SRE Support",
         items: [
           "Incident Response: PagerDuty/Opsgenie",
           "Runbooks / playbooks",
-          "Root-cause-analysis (RCA) и предотвращение инцидентов"
+          "Root-cause-analysis (RCA) and incident prevention"
         ]
       },
       {
-        title: "11.2 Операционное сопровождение",
+        title: "11.2 Operational Maintenance",
         items: [
-          "Управление окружениями",
-          "Патчи, обновления, контроль версий",
-          "Еженедельные отчёты и статус-брифинги"
+          "Environment management",
+          "Patches, updates, version control",
+          "Weekly reports and status briefings"
         ]
       }
     ]
   },
   {
     id: "consulting",
-    title: "12. Аудиты, консалтинг и обучение",
+    title: "12. Audits, Consulting & Training",
     techStack: [],
     subSections: [
       {
-        title: "12.1 Архитектурные аудиты",
+        title: "12.1 Architectural Audits",
         items: [
           "Security, scalability, performance, cost",
           "Best practices review",
-          "Roadmap улучшений"
+          "Improvement roadmap"
         ]
       },
       {
-        title: "12.2 Обучение и консультации",
+        title: "12.2 Training & Consulting",
         items: [
-          "Kubernetes для команд",
-          "Terraform/IaC тренинги",
-          "Обучение cloud-architect подходам"
+          "Kubernetes for teams",
+          "Terraform/IaC training",
+          "Cloud architect approach training"
         ]
       }
     ]

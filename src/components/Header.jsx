@@ -27,11 +27,11 @@ const Header = () => {
                 </div>
                 <nav className="nav">
                     <ul>
-                        <li onClick={() => scrollToSection('services')}>Услуги</li>
-                        <li onClick={() => scrollToSection('about')}>О нас</li>
-                        <li onClick={() => scrollToSection('contact')}>Контакты</li>
+                        <li onClick={() => scrollToSection('services')}>Services</li>
+                        <li onClick={() => scrollToSection('about')}>About</li>
+                        <li onClick={() => scrollToSection('contact')}>Contact</li>
                     </ul>
-                    <button className="btn-outline" onClick={() => scrollToSection('contact')}>Связаться</button>
+                    <button className="btn-outline" onClick={() => scrollToSection('contact')}>Get in Touch</button>
                 </nav>
             </div>
         </header>

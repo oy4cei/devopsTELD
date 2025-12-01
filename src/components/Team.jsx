@@ -7,9 +7,9 @@ const Team = () => {
         <section className="team-section" id="team">
             <div className="container">
                 <div className="team-header">
-                    <h2 className="team-title">Наша команда</h2>
+                    <h2 className="team-title">Our Team</h2>
                     <p className="team-subtitle">
-                        Профессионалы мирового уровня с опытом работы в ведущих технологических компаниях
+                        World-class professionals with experience in leading tech companies
                     </p>
                 </div>
 

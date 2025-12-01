@@ -14,10 +14,10 @@ const Hero = () => {
             <div className="hero-bg"></div>
             <div className="container hero-content">
                 <h1 className="hero-title">
-                    Трансформируйте свою инфраструктуру с <span className="text-primary">DevOpsPro</span>
+                    Transform Your Infrastructure with <span className="text-primary">DevOpsPro</span>
                 </h1>
                 <p className="hero-subtitle">
-                    Профессиональные услуги DevOps для масштабируемости, безопасности и надежности вашего бизнеса
+                    Professional DevOps services for scalability, security, and reliability of your business
                 </p>
                 <div className="hero-features">
                     <div className="feature-item">
@@ -38,7 +38,7 @@ const Hero = () => {
                     </div>
                 </div>
                 <button className="btn btn-large" onClick={scrollToServices}>
-                    Узнать больше
+                    Learn More
                 </button>
             </div>
         </section>
