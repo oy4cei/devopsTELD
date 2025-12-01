@@ -64,7 +64,10 @@ ${message}
         res.status(200).json({ success: true, message: 'Message sent successfully!' });
     } catch (error) {
         console.error('Error sending to Telegram:', error.response?.data || error.message);
-        res.status(500).json({ error: 'Failed to send message to Telegram.' });
+        res.status(500).json({
+            error: 'Failed to send message to Telegram.',
+            details: error.response?.data || error.message
+        });
     }
 });
 
