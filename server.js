@@ -12,6 +12,15 @@ const PORT = process.env.PORT || 3001;
 app.use(cors());
 app.use(express.json());
 
+// Serve static files from the React app
+import path from 'path';
+import { fileURLToPath } from 'url';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+app.use(express.static(path.join(__dirname, 'dist')));
+
 // Routes
 app.post('/api/send-telegram', async (req, res) => {
     const { name, email, subject, message } = req.body;
@@ -52,6 +61,14 @@ ${message}
         console.error('Error sending to Telegram:', error.response?.data || error.message);
         res.status(500).json({ error: 'Failed to send message to Telegram.' });
     }
+});
+
+
+
+// The "catchall" handler: for any request that doesn't
+// match one above, send back React's index.html file.
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, 'dist', 'index.html'));
 });
 
 app.listen(PORT, () => {
