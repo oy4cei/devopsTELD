@@ -1,11 +1,7 @@
 import React, { useEffect } from 'react';
-import Header from './components/Header';
-import Hero from './components/Hero';
-import ServiceSection from './components/ServiceSection';
-import Team from './components/Team';
-import Contact from './components/Contact';
-import Footer from './components/Footer';
-import { services } from './data/services';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import HomePage from './pages/HomePage';
+import ServiceDetail from './pages/ServiceDetail';
 import './App.css';
 
 function App() {
@@ -15,21 +11,16 @@ function App() {
   }, []);
 
   return (
-    <div className="app">
-      <Header />
-      <Hero />
-      <div id="services" className="services-container">
-        {services.map((service, index) => (
-          <ServiceSection key={service.id} service={service} index={index} />
-        ))}
+    <Router>
+      <div className="app">
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/services/:serviceId/:subsectionId" element={<ServiceDetail />} />
+        </Routes>
       </div>
-      <Team />
-      <Contact />
-      <Footer />
-    </div>
+    </Router>
   );
 }
 
 export default App;
-
 

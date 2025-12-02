@@ -1,0 +1,272 @@
+.service-detail {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 100%);
+}
+
+.detail-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 120px 2rem 4rem;
+    color: #e0e0e0;
+}
+
+.breadcrumb {
+    font-size: 0.9rem;
+    margin-bottom: 2rem;
+    color: #888;
+}
+
+.breadcrumb a {
+    color: #00d4ff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.breadcrumb a:hover {
+    color: #00a8cc;
+}
+
+.detail-title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    background: linear-gradient(135deg, #00d4ff 0%, #7b2cbf 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.detail-subtitle {
+    font-size: 1.3rem;
+    color: #b0b0b0;
+    margin-bottom: 3rem;
+    line-height: 1.6;
+}
+
+.detail-section {
+    margin-bottom: 4rem;
+}
+
+.detail-section h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #00d4ff;
+    border-bottom: 2px solid rgba(0, 212, 255, 0.3);
+    padding-bottom: 0.5rem;
+}
+
+.principles-list,
+.standards-list {
+    list-style: none;
+    padding: 0;
+}
+
+.principles-list li,
+.standards-list li {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    border-left: 4px solid #00d4ff;
+    line-height: 1.8;
+}
+
+.principles-list li strong,
+.standards-list li strong {
+    color: #00d4ff;
+}
+
+.tools-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.tool-card {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 1.5rem;
+    border-radius: 12px;
+    border: 1px solid rgba(0, 212, 255, 0.2);
+    transition: all 0.3s;
+}
+
+.tool-card:hover {
+    transform: translateY(-5px);
+    border-color: #00d4ff;
+    box-shadow: 0 10px 30px rgba(0, 212, 255, 0.2);
+}
+
+.tool-card h3 {
+    color: #00d4ff;
+    margin-bottom: 0.5rem;
+}
+
+.tool-category {
+    font-size: 0.85rem;
+    color: #7b2cbf;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+}
+
+.tool-best-for {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: #b0b0b0;
+}
+
+.implementation-steps {
+    margin-top: 2rem;
+}
+
+.implementation-step {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 12px;
+}
+
+.step-number {
+    flex-shrink: 0;
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, #00d4ff 0%, #7b2cbf 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: white;
+}
+
+.step-content h3 {
+    color: #00d4ff;
+    margin-bottom: 0.5rem;
+}
+
+.step-content ul {
+    margin-top: 1rem;
+    padding-left: 1.5rem;
+}
+
+.step-content li {
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+}
+
+.challenges-list {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.challenge-card {
+    background: rgba(255, 100, 100, 0.05);
+    padding: 1.5rem;
+    border-radius: 12px;
+    border-left: 4px solid #ff6b6b;
+}
+
+.challenge-card h3 {
+    color: #ff6b6b;
+    margin-bottom: 1rem;
+}
+
+.solution {
+    color: #4ecdc4;
+    margin-top: 1rem;
+    line-height: 1.6;
+}
+
+.examples-list {
+    display: grid;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.example-card {
+    background: rgba(123, 44, 191, 0.1);
+    padding: 2rem;
+    border-radius: 12px;
+    border: 1px solid rgba(123, 44, 191, 0.3);
+}
+
+.example-card h3 {
+    color: #7b2cbf;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.example-scenario,
+.example-solution,
+.example-result {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.navigation-buttons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 4rem;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.back-button,
+.contact-button {
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s;
+    cursor: pointer;
+    border: none;
+}
+
+.back-button {
+    background: rgba(255, 255, 255, 0.1);
+    color: #00d4ff;
+    border: 1px solid #00d4ff;
+}
+
+.back-button:hover {
+    background: #00d4ff;
+    color: #0a0a0a;
+}
+
+.contact-button {
+    background: linear-gradient(135deg, #00d4ff 0%, #7b2cbf 100%);
+    color: white;
+}
+
+.contact-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 30px rgba(0, 212, 255, 0.3);
+}
+
+@media (max-width: 768px) {
+    .detail-title {
+        font-size: 2rem;
+    }
+
+    .detail-subtitle {
+        font-size: 1.1rem;
+    }
+
+    .tools-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .implementation-step {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .navigation-buttons {
+        flex-direction: column;
+    }
+}

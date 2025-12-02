@@ -81,3 +81,18 @@ app.use(cors({
 - Frontend: `npm run dev` (port 5173)
 - Backend: `node server.js` (port 3001)
 - No environment variables needed locally (uses defaults)
+
+## 5. Telegram Bot Setup (Group Chat)
+
+To receive notifications in a group chat (so everyone sees them):
+
+1.  **Create a Group** in Telegram and add your bot to it.
+2.  **Make the bot an Admin** (optional, but ensures it can read messages).
+3.  **Send a message** to the group (e.g., "/start" or "Hello").
+4.  **Find the Group ID**:
+    *   Run this script locally: `node get_chat_id.js`
+    *   Look for the ID starting with `-` (e.g., `-100123456789`).
+5.  **Update Railway**:
+    *   Go to Railway -> Variables.
+    *   Set `TELEGRAM_CHAT_ID` to your Group ID.
+    *   Redeploy.

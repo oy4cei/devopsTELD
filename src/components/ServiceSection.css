@@ -96,6 +96,17 @@
     font-weight: 700;
 }
 
+.subsection-link {
+    text-decoration: none;
+    display: block;
+    transition: all 0.3s;
+}
+
+.subsection-link:hover .subsection-title {
+    color: #7b2cbf;
+    transform: translateX(5px);
+}
+
 .subsection-items {
     list-style: none;
 }

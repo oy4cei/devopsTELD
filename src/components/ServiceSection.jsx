@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
+import { Link } from 'react-router-dom';
 import './ServiceSection.css';
 
 const ServiceSection = ({ service, index }) => {
@@ -45,19 +46,27 @@ const ServiceSection = ({ service, index }) => {
                 </div>
 
                 <div className="subsections-grid">
-                    {service.subSections.map((subSection, idx) => (
-                        <div key={idx} className="subsection-card">
-                            <h3 className="subsection-title">{subSection.title}</h3>
-                            <ul className="subsection-items">
-                                {subSection.items.map((item, itemIdx) => (
-                                    <li key={itemIdx} className="subsection-item">
-                                        <span className="item-icon">▸</span>
-                                        {item}
-                                    </li>
-                                ))}
-                            </ul>
-                        </div>
-                    ))}
+                    {service.subSections.map((subSection, idx) => {
+                        // Extract subsection number (e.g., "1.1" from "1.1 Cloud Architecture & Design")
+                        const subsectionNumber = subSection.title.split(' ')[0];
+                        const detailPath = `/services/${service.id}/${subsectionNumber}`;
+
+                        return (
+                            <div key={idx} className="subsection-card">
+                                <Link to={detailPath} className="subsection-link">
+                                    <h3 className="subsection-title">{subSection.title}</h3>
+                                </Link>
+                                <ul className="subsection-items">
+                                    {subSection.items.map((item, itemIdx) => (
+                                        <li key={itemIdx} className="subsection-item">
+                                            <span className="item-icon">▸</span>
+                                            {item}
+                                        </li>
+                                    ))}
+                                </ul>
+                            </div>
+                        );
+                    })}
                 </div>
             </div>
         </section>
