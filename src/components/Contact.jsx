@@ -72,8 +72,12 @@ const Contact = () => {
                                     <circle cx="12" cy="10" r="3" />
                                 </svg>
                             </div>
-                            <h3>Address</h3>
-                            <p>Budapest, Belgian Beer Café</p>
+                            <h3>Our Offices</h3>
+                            <div className="address-list">
+                                <p>📍 Budapest, Belgian Beer Café</p>
+                                <p>📍 Amsterdam, Cafe Belgique</p>
+                                <p>📍 Kyiv, Belle-Vue Belgian Beer Cafe</p>
+                            </div>
                         </div>
 
                         <div className="info-card">
