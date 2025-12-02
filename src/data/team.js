@@ -54,10 +54,10 @@ export const teamMembers = [
         image: "https://randomuser.me/api/portraits/women/90.jpg"
     },
     {
-        id: 9,
-        name: "Alex Novak",
-        position: "Infrastructure Engineer",
-        image: "https://randomuser.me/api/portraits/men/54.jpg"
+        id: 14,
+        name: "Sasha",
+        position: "Intimate Communication Engineer",
+        image: "/images/sasha.jpg"
     },
     {
         id: 10,
