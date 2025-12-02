@@ -69,6 +69,7 @@ export const teamMembers = [
         id: 13,
         name: "Vlas",
         position: "Intimate Communications Engineer",
-        image: "/images/vlas.jpeg"
+        image: "/images/vlas.jpeg",
+        fired: true
     }
 ];

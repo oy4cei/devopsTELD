@@ -15,13 +15,16 @@ const Team = () => {
 
                 <div className="team-grid">
                     {teamMembers.map((member) => (
-                        <div key={member.id} className="team-card">
+                        <div key={member.id} className={`team-card ${member.fired ? 'fired' : ''}`}>
                             <div className="team-avatar-container">
                                 <img
                                     src={member.image}
                                     alt={member.name}
                                     className="team-avatar-img"
                                 />
+                                {member.fired && (
+                                    <div className="fired-badge">FIRED</div>
+                                )}
                             </div>
                             <h3 className="member-name">{member.name}</h3>
                             <p className="member-position">{member.position}</p>

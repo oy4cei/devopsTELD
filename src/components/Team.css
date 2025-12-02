@@ -94,6 +94,39 @@
     font-weight: 500;
 }
 
+/* Fired status styles */
+.team-card.fired .team-avatar-container {
+    position: relative;
+    border-color: rgba(255, 0, 0, 0.5);
+}
+
+.team-card.fired .team-avatar-img {
+    opacity: 0.4;
+    filter: grayscale(70%);
+}
+
+.fired-badge {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-15deg);
+    background: rgba(220, 38, 38, 0.95);
+    color: white;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 12px rgba(220, 38, 38, 0.5);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    z-index: 10;
+}
+
+.team-card.fired:hover .team-avatar-container {
+    transform: scale(1.05);
+    border-color: rgba(255, 0, 0, 0.7);
+}
+
 @media (max-width: 768px) {
     .team-section {
         padding: 60px 0;
