@@ -12,11 +12,11 @@
 }
 
 .service-section.even {
-    background: linear-gradient(135deg, rgba(0, 119, 182, 0.03) 0%, transparent 100%);
+    background: linear-gradient(135deg, rgba(30, 64, 175, 0.02) 0%, transparent 100%);
 }
 
 .service-section.odd {
-    background: linear-gradient(-135deg, rgba(0, 212, 255, 0.03) 0%, transparent 100%);
+    background: linear-gradient(-135deg, rgba(59, 130, 246, 0.02) 0%, transparent 100%);
 }
 
 .service-header {
@@ -40,7 +40,7 @@
     transform: translateX(-50%);
     width: 60px;
     height: 3px;
-    background: linear-gradient(90deg, var(--secondary-color), var(--primary-color));
+    background: var(--primary-color);
 }
 
 .tech-stack {
@@ -52,20 +52,20 @@
 }
 
 .tech-badge {
-    background: rgba(0, 212, 255, 0.1);
-    border: 1px solid rgba(0, 212, 255, 0.3);
-    color: var(--primary-color);
-    padding: 6px 16px;
+    background: rgba(59, 130, 246, 0.1);
+    border: 1px solid var(--border-color-hover);
+    color: var(--primary-light);
+    padding: 7px 18px;
     border-radius: 20px;
     font-size: 0.85rem;
     font-weight: 600;
-    transition: all 0.3s;
+    transition: all var(--transition-speed) var(--transition-smooth);
 }
 
 .tech-badge:hover {
-    background: rgba(0, 212, 255, 0.2);
+    background: rgba(59, 130, 246, 0.15);
     border-color: var(--primary-color);
-    transform: scale(1.05);
+    transform: scale(1.03);
 }
 
 .subsections-grid {
@@ -75,18 +75,19 @@
 }
 
 .subsection-card {
-    background: rgba(17, 22, 37, 0.5);
-    border: 1px solid rgba(255, 255, 255, 0.05);
+    background: rgba(19, 23, 42, 0.5);
+    border: 1px solid var(--border-color);
     border-radius: 12px;
-    padding: 30px;
-    transition: all 0.4s;
+    padding: 32px;
+    transition: all var(--transition-speed) var(--transition-smooth);
     backdrop-filter: blur(10px);
 }
 
 .subsection-card:hover {
-    border-color: rgba(0, 212, 255, 0.3);
-    transform: translateY(-5px);
-    box-shadow: 0 10px 30px rgba(0, 212, 255, 0.1);
+    border-color: var(--border-color-hover);
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(59, 130, 246, 0.12);
+    background: rgba(19, 23, 42, 0.7);
 }
 
 .subsection-title {
@@ -103,7 +104,7 @@
 }
 
 .subsection-link:hover .subsection-title {
-    color: #7b2cbf;
+    color: var(--primary-light);
     transform: translateX(5px);
 }
 

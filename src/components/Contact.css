@@ -13,8 +13,8 @@
     right: 0;
     bottom: 0;
     background:
-        radial-gradient(circle at 20% 50%, rgba(99, 102, 241, 0.1) 0%, transparent 50%),
-        radial-gradient(circle at 80% 80%, rgba(168, 85, 247, 0.1) 0%, transparent 50%);
+        radial-gradient(circle at 20% 50%, rgba(59, 130, 246, 0.06) 0%, transparent 50%),
+        radial-gradient(circle at 80% 80%, rgba(30, 64, 175, 0.05) 0%, transparent 50%);
     pointer-events: none;
 }
 
@@ -31,12 +31,9 @@
 }
 
 .contact-title {
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: 700;
-    background: linear-gradient(135deg, #6366f1 0%, #a855f7 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: #fff;
     margin-bottom: 20px;
     animation: fadeInUp 0.6s ease-out;
 }
@@ -74,16 +71,16 @@
 
 .info-card:hover {
     background: rgba(255, 255, 255, 0.05);
-    border-color: rgba(99, 102, 241, 0.3);
-    transform: translateY(-5px);
-    box-shadow: 0 10px 30px rgba(99, 102, 241, 0.2);
+    border-color: var(--border-color-hover);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 24px rgba(59, 130, 246, 0.15);
 }
 
 .info-icon {
     width: 50px;
     height: 50px;
-    background: linear-gradient(135deg, #6366f1 0%, #a855f7 100%);
-    border-radius: 12px;
+    background: var(--primary-color);
+    border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -147,8 +144,8 @@
 .form-group textarea:focus {
     outline: none;
     background: rgba(255, 255, 255, 0.08);
-    border-color: #6366f1;
-    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
 }
 
 .form-group input::placeholder,
@@ -164,14 +161,15 @@
 .submit-btn {
     width: 100%;
     padding: 16px 32px;
-    background: linear-gradient(135deg, #6366f1 0%, #a855f7 100%);
+    background: var(--primary-color);
     color: white;
     border: none;
-    border-radius: 12px;
-    font-size: 1.1rem;
+    border-radius: 10px;
+    font-size: 1rem;
     font-weight: 600;
+    letter-spacing: var(--letter-spacing-wide);
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: all var(--transition-speed) var(--transition-smooth);
     position: relative;
     overflow: hidden;
     display: flex;
@@ -196,8 +194,9 @@
 }
 
 .submit-btn:hover {
+    background: var(--primary-dark);
     transform: translateY(-2px);
-    box-shadow: 0 10px 30px rgba(99, 102, 241, 0.4);
+    box-shadow: 0 8px 24px rgba(59, 130, 246, 0.3);
 }
 
 .submit-btn:active {
@@ -210,7 +209,7 @@
 }
 
 .submit-btn.submitting {
-    background: linear-gradient(135deg, #4f46e5 0%, #9333ea 100%);
+    background: var(--primary-dark);
 }
 
 /* Spinner */

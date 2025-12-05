@@ -1,0 +1,119 @@
+.clients-section {
+    padding: 80px 0;
+    background: linear-gradient(180deg, rgba(30, 64, 175, 0.02) 0%, transparent 100%);
+}
+
+.clients-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.clients-title {
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 16px;
+}
+
+.clients-subtitle {
+    font-size: 1rem;
+    color: var(--text-secondary);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.clients-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 32px;
+    max-width: 1100px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.client-logo-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 32px 24px;
+    background: rgba(19, 23, 42, 0.3);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    min-height: 120px;
+    transition: all var(--transition-speed) var(--transition-smooth);
+}
+
+.client-logo-card:hover {
+    background: rgba(19, 23, 42, 0.5);
+    border-color: var(--border-color-hover);
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(59, 130, 246, 0.1);
+}
+
+.client-logo-img {
+    max-width: 140px;
+    max-height: 60px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    filter: grayscale(0.8) brightness(1.2);
+    transition: filter var(--transition-speed);
+}
+
+.client-logo-card:hover .client-logo-img {
+    filter: grayscale(0) brightness(1);
+}
+
+.client-logo-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    color: var(--text-secondary);
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: color var(--transition-speed);
+}
+
+.client-icon {
+    font-size: 2rem;
+    filter: grayscale(0.5);
+}
+
+.client-name {
+    font-size: 0.95rem;
+    letter-spacing: 0.5px;
+}
+
+.client-logo-card:hover .client-logo-text {
+    color: var(--primary-light);
+}
+
+.client-logo-card:hover .client-icon {
+    filter: grayscale(0);
+}
+
+@media (max-width: 768px) {
+    .clients-section {
+        padding: 60px 0;
+    }
+
+    .clients-title {
+        font-size: 1.875rem;
+    }
+
+    .clients-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 20px;
+    }
+
+    .client-logo-card {
+        padding: 24px 16px;
+        min-height: 100px;
+    }
+
+    .client-logo-img {
+        max-width: 110px;
+        max-height: 50px;
+    }
+}
