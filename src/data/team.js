@@ -53,23 +53,12 @@ export const teamMembers = [
         position: "Platform Engineer",
         image: "https://randomuser.me/api/portraits/women/90.jpg"
     },
-    {
-        id: 14,
-        name: "Sasha",
-        position: "Intimate Communication Engineer",
-        image: "/images/sasha.jpg"
-    },
+
     {
         id: 10,
         name: "Priya Sharma",
         position: "FinOps Specialist",
         image: "https://randomuser.me/api/portraits/women/29.jpg"
     },
-    {
-        id: 13,
-        name: "Vlas",
-        position: "Intimate Communications Engineer",
-        image: "/images/vlas.jpeg",
-        fired: true
-    }
+
 ];

@@ -1,0 +1,116 @@
+.case-studies-section {
+    padding: var(--section-padding) 0;
+    background: var(--bg-color);
+}
+
+.cases-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+}
+
+.cases-grid .case-card {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s var(--transition-smooth), transform 0.6s var(--transition-smooth);
+}
+
+.cases-grid.visible .case-card {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.case-card {
+    background: var(--surface-color);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.35s var(--transition-smooth);
+}
+
+.case-card:hover {
+    border-color: var(--border-color-hover);
+    box-shadow: var(--shadow-lg);
+    transform: translateY(-4px);
+}
+
+.case-industry {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.82rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 20px;
+}
+
+.case-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+}
+
+.case-title {
+    font-family: var(--font-sans);
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--text-color);
+    margin-bottom: 14px;
+    line-height: 1.35;
+}
+
+.case-desc {
+    font-size: 0.92rem;
+    color: var(--text-muted);
+    line-height: 1.7;
+    margin-bottom: 24px;
+    flex: 1;
+}
+
+.case-results {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 24px;
+}
+
+.case-result {
+    padding: 6px 14px;
+    background: var(--bg-alt);
+    border-radius: 100px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+    letter-spacing: 0.01em;
+}
+
+.case-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: var(--accent-color);
+    text-decoration: none;
+    transition: gap 0.3s;
+}
+
+.case-link:hover {
+    gap: 12px;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .cases-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .case-card {
+        padding: 28px;
+    }
+}

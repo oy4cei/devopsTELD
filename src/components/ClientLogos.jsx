@@ -8,27 +8,27 @@ const ClientLogos = () => {
         { name: 'CloudNet', path: '/images/client_logo_3_1764942848575.png' },
         { name: 'FinanceFlow', path: '/images/client_logo_4_1764942868125.png' },
         { name: 'HealthTech', text: 'HealthTech', icon: '⚕️' },
-        { name: 'EnterpriseHub', text: 'EnterpriseHub', icon: '🏢' }
+        { name: 'EnterpriseHub', text: 'EnterpriseHub', icon: '🏢' },
     ];
 
+    // Double the logos for infinite scroll effect
+    const allLogos = [...logos, ...logos];
+
     return (
-        <section className="clients-section">
+        <section className="logos-section">
             <div className="container">
-                <div className="clients-header">
-                    <h2 className="clients-title">Trusted by Industry Leaders</h2>
-                    <p className="clients-subtitle">
-                        Partnering with innovative companies worldwide
-                    </p>
-                </div>
-                <div className="clients-grid">
-                    {logos.map((logo, index) => (
-                        <div key={index} className="client-logo-card">
+                <p className="logos-label">Trusted by innovative companies worldwide</p>
+            </div>
+            <div className="logos-track-wrapper">
+                <div className="logos-track">
+                    {allLogos.map((logo, index) => (
+                        <div key={index} className="logo-item">
                             {logo.path ? (
-                                <img src={logo.path} alt={logo.name} className="client-logo-img" />
+                                <img src={logo.path} alt={logo.name} className="logo-img" />
                             ) : (
-                                <div className="client-logo-text">
-                                    {logo.icon && <span className="client-icon">{logo.icon}</span>}
-                                    <span className="client-name">{logo.text}</span>
+                                <div className="logo-text-item">
+                                    <span className="logo-icon-emoji">{logo.icon}</span>
+                                    <span className="logo-name">{logo.text}</span>
                                 </div>
                             )}
                         </div>
