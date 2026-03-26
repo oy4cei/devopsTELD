@@ -31,6 +31,11 @@ const Hero = () => {
     return (
         <section className="hero">
             <div className="hero-bg">
+                <video autoPlay loop muted playsInline className="hero-video">
+                    {/* Placeholder local video. Replace /public/bg-video.mp4 with your actual video. */}
+                    <source src="/bg-video.mp4" type="video/mp4" />
+                </video>
+                <div className="hero-video-overlay"></div>
                 <div className="hero-grid-pattern"></div>
                 <div className="hero-gradient"></div>
                 <div className="hero-glow hero-glow-1"></div>

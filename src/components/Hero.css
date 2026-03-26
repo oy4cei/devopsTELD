@@ -11,8 +11,57 @@
 .hero-bg {
     position: absolute;
     inset: 0;
-    background: linear-gradient(135deg, #0a0f1e 0%, #0f1a35 40%, #0d1f3c 70%, #0a1628 100%);
+    background: #0a0f1e;
     z-index: 0;
+    overflow: hidden;
+}
+
+.hero-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translateX(-50%) translateY(-50%);
+    object-fit: cover;
+    z-index: 1;
+    opacity: 0.6; /* Adjust opacity to blend with background */
+}
+
+.hero-video-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(10, 15, 30, 0.8) 0%, rgba(15, 26, 53, 0.6) 40%, rgba(13, 31, 60, 0.6) 70%, rgba(10, 22, 40, 0.8) 100%);
+    z-index: 2;
+}
+
+.hero-grid-pattern {
+    position: absolute;
+    inset: 0;
+    background-image:
+        linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+    background-size: 60px 60px;
+    z-index: 3;
+}
+
+.hero-gradient {
+    position: absolute;
+    inset: 0;
+    z-index: 4;
+    background:
+        radial-gradient(ellipse 80% 60% at 70% 40%, rgba(0, 86, 210, 0.12) 0%, transparent 70%),
+        radial-gradient(ellipse 60% 50% at 30% 70%, rgba(242, 97, 122, 0.06) 0%, transparent 60%);
+}
+
+.hero-glow {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(100px);
+    animation: float 8s ease-in-out infinite;
+    z-index: 5;
 }
 
 .hero-grid-pattern {
